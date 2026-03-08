@@ -31,7 +31,7 @@ class The(Boisson):
         return "Thé"
 
 
-# Nouvelle boisson combinée
+
 class BoissonCombinee(Boisson):
     def __init__(self, boisson1, boisson2):
         self.boisson1 = boisson1
@@ -44,9 +44,6 @@ class BoissonCombinee(Boisson):
         return self.boisson1.description() + " + " + self.boisson2.description()
 
 
-# -------------------------
-# 3. Décorateur pour ingrédients
-# -------------------------
 class DecorateurBoisson(Boisson):
     def __init__(self, boisson):
         self._boisson = boisson
